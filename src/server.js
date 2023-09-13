@@ -9,7 +9,7 @@ app.use(express.json());
 
 //Routes
 app.get('/', function (req, res) {
-  res.status(200).json('server is runing!');
+  res.status(200).json({ service: 'server is runing!' });
 });
 
 app.use(userRouter);
